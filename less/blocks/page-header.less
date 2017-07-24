@@ -1,0 +1,89 @@
+.page-header {
+  min-height: 163px;
+  margin: 0;
+  padding: 0;
+  background: #fff url("../img/header-bg-mobile.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.page-header__promo {
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.page-header__title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.page-header__slogan {
+  font-family: "RobotoThin";
+  width: 180px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  span {
+    color: @yellow;
+  }
+}
+
+
+.page-header__link {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 0;
+  width: 124px;
+  height: 43px;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @yellow;
+
+  &:hover {
+    color: #000000;
+    background-color: @yellow;
+  }
+}
+
+@media @tablet-widths {
+  .page-header {
+    min-height: 337px;
+    background: #fff url("../img/header-bg-tablet.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .page-header__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .page-header__slogan {
+    width: auto;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media @desktop-widths {
+  .page-header {
+    min-height: 613px;
+    background: #fff url("../img/header-bg-desktop.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .page-header__promo {
+    padding-top: 150px;
+  }
+}

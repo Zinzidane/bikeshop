@@ -1,0 +1,109 @@
+.contacts {
+  margin: 0;
+  padding: 0;
+  background: #fff url("../img/contacts-bg-mobile.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.contacts__wrapper {
+  .container ();
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.contacts__title {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__input {
+    height: 45px;
+    padding: 6px 20px;
+    margin-bottom: 20px;
+    font-family: @font-family;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(218, 218, 218);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    [placeholder] {
+      text-transform: uppercase;
+    }
+}
+
+
+.contacts__textarea {
+  min-height: 155px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  font-family: @font-family;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(218, 218, 218);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.contacts__button  {
+  height: 43px;
+  font-style: 12px;
+  line-height: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: rgb(183, 183, 183);
+
+  &:hover {
+    color: @yellow;
+    background-color: #000;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media @tablet-widths {
+  .contacts {
+    background: #fff url("../img/contacts-bg-tablet.jpg") center no-repeat;
+    background-size: cover;
+  }
+  .contacts__input-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    input:first-child {
+      margin-right: 20px;
+      width: 216px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .contacts {
+    background: #fff url("../img/contacts-bg-desktop.jpg") center no-repeat;
+    background-size: cover;
+  }
+}

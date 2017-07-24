@@ -1,0 +1,134 @@
+.categories {
+	margin: 0;
+	padding: 0;
+	background: #fff url(../img/categories-bg-mobile.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.categories__wrapper {
+	.container();
+	padding-top: 35px;
+	padding-bottom: 70px;
+}
+
+.categories__title {
+	margin: 0 auto;
+	margin-bottom: 35px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+.categories__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.categories__img-filter {
+	display: none;
+}
+
+.categories__item {
+	position: relative;
+	width: 280px;
+	margin-bottom: 20px;
+	&:hover .categories__img-filter {
+		position: absolute;	
+		top: 0;
+		left: 0;
+		display: block;
+	}
+	&:hover .categories__link {
+		display: block;
+	}
+}
+
+.categories__info {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 280px;
+	margin: 0 auto;
+	z-index: 5;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+.categories__item-name {
+	margin: 0;
+	font-size: 15px;
+	color: @yellow;
+	text-transform: uppercase;
+}
+
+.categories__item-desc {
+	margin: 0;
+	margin-bottom: 20px;
+	font-family: "Roboto Light";
+	font-style: 16px;
+	color: #ffffff;
+}
+
+.categories__link {
+	display: none;
+	margin: 0 auto;
+	padding: 6px;	
+	width: 118px;
+	height: 37px;
+	border-width: 3px;
+	border-color: rgb(255, 255, 255);
+	border-style: solid;
+	border-radius: 10px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	&:hover {
+		color: #000000;
+		background-color: #fff;
+	}
+	&:active {
+		opacity: 0.3;
+	}
+}
+
+@media @tablet-widths {
+	.categories {
+		background: #fff url(../img/categories-bg-tablet.jpg) center no-repeat;
+		background-size: cover;
+	}
+}
+
+@media @notebook-widths {
+	.categories__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media @desktop-widths {
+	.categories {
+		background: #fff url(../img/categories-bg-desktop.jpg) center no-repeat;
+		background-size: cover;
+	}
+
+	.categories__wrapper {
+		padding-top: 65px;
+		padding-bottom: 150px;
+	}
+
+	.categories__title {
+		margin-bottom: 65px;
+	}
+
+	.categories__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.categories__item {
+		width: 346px;
+	}
+}
