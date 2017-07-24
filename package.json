@@ -2,20 +2,7 @@
   "name": "thebikeshop",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "test": "editorconfig-cli",
-    "build": "gulp build",
-    "start": "npm run build && gulp serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Zinzidane/bikeshop.git"
-  },
-  "author": "Ivan Muliarchyk",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Zinzidane/bikeshop/issues"
-  },
+  "main": "gulpfile.js",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.13",
@@ -31,5 +18,20 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.0",
     "run-sequence": "^2.0.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zinzidane/bikeshop.git"
+  },
+  "author": "Ivan Muliarchyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zinzidane/bikeshop/issues"
+  },
+  "homepage": "https://github.com/Zinzidane/bikeshop#readme"
 }
